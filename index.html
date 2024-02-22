@@ -19,7 +19,8 @@
             height: auto;
             text-align: center;
             overflow: hidden;
-            flex-shrink: 0; /* Prevents the first row from expanding beyond its content */
+            flex-shrink: 0;
+            position: relative; /* Added position relative for absolute positioning */
         }
 
         img {
@@ -34,7 +35,8 @@
             box-sizing: border-box;
             padding: 20px;
             direction: rtl;
-            margin: 0; /* Remove default margin */
+            margin: 0;
+            position: relative; /* Added position relative for absolute positioning */
         }
 
         label, input, select {
@@ -44,7 +46,7 @@
         }
 
         input[type="text"], select {
-            width: calc(100% - 20px); /* Adjusted to prevent horizontal scrolling */
+            width: calc(100% - 20px);
             padding: 8px;
             box-sizing: border-box;
         }
@@ -61,7 +63,16 @@
 
         .row2 {
             background-color: #fff6f1;
-            flex-shrink: 0; /* Prevents the second row from expanding beyond its content */
+            flex-shrink: 0;
+        }
+
+        .form-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 14%;
+            max-width: 100px; /* Adjust the max-width as needed */
+            max-height: 100px; /* Adjust the max-height as needed */
         }
     </style>
 </head>
@@ -80,6 +91,7 @@
                 <option>אולי</option>
             </select>
             <input type="submit" value="שגרי">
+            <img src="icon.jpeg" alt="Form Image" class="form-image">
         </form>
     </div>
 </body>
