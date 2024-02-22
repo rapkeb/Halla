@@ -30,12 +30,12 @@ form {
     width: 300px;
     padding: 20px;
     direction: rtl; /* Right-to-left text direction for Hebrew */
-    text-align: center;
     display: inline-block;
 }
 
 label, input, select {
     display: block;
+    text-align: right;
     margin-bottom: 10px;
 }
 
@@ -45,8 +45,9 @@ input[type="text"], select {
     box-sizing: border-box;
 }
 
+
 input[type="submit"] {
-    background-color: #8ed7e1;
+    background-color: #bcbbb5;
     color: white;
     padding: 10px 15px;
     border: none;
