@@ -29,8 +29,6 @@ img {
 form {
     width: 300px;
     padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
     direction: rtl; /* Right-to-left text direction for Hebrew */
     text-align: center;
     display: inline-block;
@@ -48,10 +46,14 @@ input[type="text"], select {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #8ed7e1;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: inline-block;
+}
+.row2{
+    background-color: #fff6f1;
 }
