@@ -17,7 +17,7 @@ const database = firebase.database()
 
 function add_name()
 {
-    // Get all our input fields
+    // Get all our input
     let name = document.getElementById('name').value
     let status = document.getElementById('status').value
     if (name == "")
