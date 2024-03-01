@@ -3,10 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="הפרשת חלה ענבר" />
-    <meta property="og:type" content="הזמנה" />
-    <meta property="og:url" content="https://github.com/rapkeb/Halla/" />
-    <meta property="og:image" content="https://www.abone.co.il/wp-content/uploads/2015/07/chala2.jpg" />
     <title>הפרשת חלה ענבר</title>
     <style>
         body {
@@ -54,7 +50,7 @@
             box-sizing: border-box;
         }
 
-        input[type="submit"] {
+        button[type="button"] {
             background-color: #bcbbb5;
             color: white;
             padding: 10px 15px;
@@ -86,16 +82,19 @@
     <div class="row row2">
         <form>
             <label><b>שם:</b></label>
-            <input type="text">
+            <input type="text" id="name">
             <label><b>סטטוס:</b></label>
-            <select>
+            <select id="status">=-
                 <option>מגיעה</option>
                 <option>לא מגיעה</option>
                 <option>אולי</option>
             </select>
-            <input type="submit" value="שגרי">
+            <button type="button" onclick="add_name()">שגרי</button>
             <img src="icon.jpeg" alt="Form Image" class="form-image">
         </form>
     </div>
 </body>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="firebase.js"></script>
 </html>
