@@ -19,6 +19,7 @@ function add_name()
 {
     // Get all our input
     let name = document.getElementById('name').value
+    let amount = document.getElementById('amount').value
     let status = document.getElementById('status').value
     if (name == "")
     {
@@ -27,6 +28,7 @@ function add_name()
     else{
         var name_data = {
             name : name,
+            amount: amount,
             status : status,
             }
             database.ref('names').push(name_data)
